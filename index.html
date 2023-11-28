@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputPlace">
+        
+            <div class="productInput d-flex justify-content-evenly row" >
+        <div class="input col-lg-3 col-12">
+            <span >Product Name : </span>
+            <input  type="text" name="productName" id="prodName">
+        </div>
+        <div class="input col-lg-3 col-12" >
+            <span>Quantity :</span>
+            <input type="number" name="productQuantity" id="prodQuantity">
+        </div>
+        <div class="input col-lg-3 col-12">
+            <span>Unit Price :</span>
+            <input type="number" name="price" id="unitPrice">
+        </div>
+            </div>
+        <div class="input d-flex justify-content-start flex-row-reverse m-2 row">
+
+            <input type="button" value="add" id="addProduct" class="btn btn-secondary m-2 col-md-2"/>
+            <input type="button" value="Clear" id="clearButton" class="btn btn-warning m-2 col-md-2"/>
+            <input type="button" value="Clear All" id="clearAll" class="btn btn-danger m-2 col-md-2"/>
+            <input type="button" value="Print" id="printButton" class="btn btn-primary m-2 col-md-2"/>
+
+        </div>
+        </div>
+        <div class="displayplace">
+            <table class="table table-striped table-light">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                     </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
